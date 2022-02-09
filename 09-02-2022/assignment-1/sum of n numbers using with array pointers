@@ -1,0 +1,22 @@
+/*ADC RJY P B SUBRAHMANYAM*/
+/*sum of n numbers using with array pointers*/
+
+#include<stdio.h>
+int main()
+{
+   int array[5];
+   int i,sum=0;
+   int *ptr;
+
+   printf("\n Enter array elements (5 integer values):");
+   for(i=0;i<5;i++)
+      scanf("%d",&array[i]);
+   ptr = array;
+
+   for(i=0;i<5;i++) 
+   {
+      sum = sum + *ptr;
+      ptr++;
+   }
+   printf("\n The sum is: %d",sum);
+}
