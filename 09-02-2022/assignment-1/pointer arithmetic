@@ -1,0 +1,21 @@
+/*ADC RJY P B SUBRAHMANYAM*/
+ /*pointer Arithmetic*/ 
+
+#include <stdio.h>
+
+int main()
+{
+   int n=2;
+   int *p1,*p2,*p3,*p4;
+   p1=&n;p2=&n;p3=&n;p4=&n;
+   printf("variable address :%u %u %u %u",p1,p2,p3,p4);
+   p1++;
+   printf("\nincrement variables :%u",p1);
+   p2--;
+   printf("\n dicrement variable:%u",p2);
+   p3=p3+2;
+   printf("\n addition variable :%u",p3);
+   p4=p4-2;
+   printf("\n subtraction variable :%u",p4);
+    return 0;
+}
